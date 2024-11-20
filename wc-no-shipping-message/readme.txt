@@ -3,9 +3,9 @@ Contributors: dangoodman
 Tags: woocommerce, shipping, woocommerce shipping, woocommerce no shipping, woocommerce no shipping options were found
 Requires PHP: 7.1
 Requires at least: 4.7
-Tested up to: 6.6
+Tested up to: 6.7
 WC requires at least: 5.0
-WC tested up to: 9.1
+WC tested up to: 9.4
 Stable tag: trunk
 
 Replaces "No shipping options were found", "There are no shipping options available" and "No shipping method has been selected" messages on the cart and checkout pages with the provided text.
@@ -33,6 +33,9 @@ Message examples:
 
 
 == Changelog ==
+
+= 2.1.12 =
+* Tested with WordPress 6.7, WooCommerce 9.4.
 
 = 2.1.11 =
 * Tested with WordPress 6.6, WooCommerce 9.1.
