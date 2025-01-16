@@ -5,7 +5,7 @@ Requires PHP: 7.1
 Requires at least: 4.7
 Tested up to: 6.7
 WC requires at least: 5.0
-WC tested up to: 9.4
+WC tested up to: 9.5
 Stable tag: trunk
 
 Replaces "No shipping options were found", "There are no shipping options available" and "No shipping method has been selected" messages on the cart and checkout pages with the provided text.
@@ -33,6 +33,9 @@ Message examples:
 
 
 == Changelog ==
+
+= 2.1.13 =
+* Tested with WooCommerce 9.5.
 
 = 2.1.12 =
 * Tested with WordPress 6.7, WooCommerce 9.4.
