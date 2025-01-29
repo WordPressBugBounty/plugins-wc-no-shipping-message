@@ -1,14 +1,14 @@
 === WooCommerce No Shipping Message ===
 Contributors: dangoodman
-Tags: woocommerce, shipping, woocommerce shipping, woocommerce no shipping, woocommerce no shipping options were found
+Tags: woocommerce no shipping options, woocommerce no shipping, woocommerce, shipping
 Requires PHP: 7.1
 Requires at least: 4.7
 Tested up to: 6.7
 WC requires at least: 5.0
-WC tested up to: 9.5
+WC tested up to: 9.6
 Stable tag: trunk
 
-Replaces "No shipping options were found", "There are no shipping options available" and "No shipping method has been selected" messages on the cart and checkout pages with the provided text.
+Replaces the "No shipping options were found", "There are no shipping options available" and "No shipping method has been selected" messages on the cart and checkout pages with the provided text.
 
 
 == Description ==
@@ -33,6 +33,9 @@ Message examples:
 
 
 == Changelog ==
+
+= 2.1.14 =
+* Tested with WooCommerce 9.6.
 
 = 2.1.13 =
 * Tested with WooCommerce 9.5.

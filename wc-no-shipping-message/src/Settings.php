@@ -86,12 +86,12 @@ class Settings
                 'id' => $sectionId = self::SETTINGS_SECTION_ID,
                 'type' => 'title',
                 'title' => __('Shipping unavailable messages', 'wc-no-shipping-message'),
-                'desc' => __('Messages shown to the customer when no shipping options available.', 'wc-no-shipping-message'),
+                'desc' => __('Messages shown to the customer when no shipping options are available.', 'wc-no-shipping-message'),
             ],
 
             $select(
                 self::MSG_CART,
-                __('On the cart page', 'wc-no-shipping-message'),
+                __('In cart', 'wc-no-shipping-message'),
                 __('The message appearing in the Shipping section of the Cart page.', 'wc-no-shipping-message'),
                 'cart.png'
             ),
@@ -99,7 +99,7 @@ class Settings
 
             $select(
                 self::MSG_CHECKOUT,
-                __('On the checkout page', 'wc-no-shipping-message'),
+                __('On checkout', 'wc-no-shipping-message'),
                 __('The message appearing in the Shipping section of the Checkout page.', 'wc-no-shipping-message'),
                 'checkout.png'
             ),
@@ -107,7 +107,7 @@ class Settings
 
             $select(
                 self::MSG_CHECKOUT_NOTICE,
-                __('Checkout notice', 'wc-no-shipping-message'),
+                __('On checkout rejection', 'wc-no-shipping-message'),
                 __('The notice appearing on the Checkout page after the customer attempts to place an order without a shipping option selected.', 'wc-no-shipping-message'),
                 'checkout-notice.png'
             ),
