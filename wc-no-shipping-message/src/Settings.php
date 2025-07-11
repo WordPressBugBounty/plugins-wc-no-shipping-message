@@ -1,5 +1,6 @@
 <?php
 namespace Wnsm;
+if (!defined('ABSPATH')) exit;
 
 use InvalidArgumentException;
 
@@ -35,8 +36,6 @@ class Settings
         }
 
         list($type, $text) = $msg;
-
-        $text = __($text, 'wc-no-shipping-message');
 
         if ($type !== self::MSG_TYPE_HTML) {
             $text = nl2br(esc_html($text));
@@ -186,7 +185,8 @@ class Settings
             case self::MSG_CHECKOUT_NOTICE:
                 return ['wnsm_msg_checkout_notice_type', 'wnsm_msg_checkout_notice_text'];
             default:
-                throw new InvalidArgumentException("Unknown message id '{$msgId}'");
+                // phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped
+                throw new InvalidArgumentException("Unknown message id '$msgId'");
         }
     }
 }

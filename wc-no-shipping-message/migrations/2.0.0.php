@@ -1,4 +1,4 @@
-<?php
+<?php if (!defined('ABSPATH')) exit;
 call_user_func(static function() {
 
     $cartTypeOption = 'wnsm_msg_cart_type';

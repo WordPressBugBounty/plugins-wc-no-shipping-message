@@ -1,17 +1,19 @@
 <?php
 /**
- * Plugin Name: WooCommerce No Shipping Message
+ * Plugin Name: No Shipping Message for WooCommerce
  * Description: Replaces the "No shipping options were found", "There are no shipping options available" and "No shipping method has been selected" messages on the cart and checkout pages with the provided text.
- * Version: 2.1.15
+ * License: GPLv3
  * Author: dangoodman
  * Author URI: https://tablerateshipping.com
+ * Version: 2.2.0
  * Requires PHP: 7.1
  * Requires at least: 4.7
- * Tested up to: 6.7
+ * Tested up to: 6.8
  * WC requires at least: 5.0
- * WC tested up to: 9.8
+ * WC tested up to: 10.0
  * Requires Plugins: woocommerce
  */
+if (!defined('ABSPATH')) exit;
 
 use Wnsm\App;
 use Wnsm\Hooks;

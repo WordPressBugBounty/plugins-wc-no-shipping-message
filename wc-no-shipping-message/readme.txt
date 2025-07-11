@@ -1,19 +1,20 @@
-=== WooCommerce No Shipping Message ===
+=== No Shipping Message for WooCommerce ===
 Contributors: dangoodman
 Tags: woocommerce no shipping options, woocommerce no shipping, woocommerce, shipping
+License: GPLv3
 Requires PHP: 7.1
 Requires at least: 4.7
-Tested up to: 6.7
+Tested up to: 6.8
 WC requires at least: 5.0
-WC tested up to: 9.8
-Stable tag: trunk
+WC tested up to: 10.0
+Stable tag: 2.2.0
 
-Replaces the "No shipping options were found", "There are no shipping options available" and "No shipping method has been selected" messages on the cart and checkout pages with the provided text.
+Allows you to customize the messages WooCommerce displays on the cart and checkout pages when no shipping methods are available.
 
 
 == Description ==
 
-The plugin allows one to quickly customize the messages WooCommerce shows to the customer when shipping is not available:
+The plugin allows quickly customizing the messages WooCommerce displays to the customer when shipping is not available:
 1. "No shipping options were found" on the cart page ([screenshot](https://ps.w.org/wc-no-shipping-message/assets/screenshot-3.png))
 2. "There are no shipping options available" on the checkout page ([screenshot](https://ps.w.org/wc-no-shipping-message/assets/screenshot-4.png))
 3. "No shipping method has been selected" notice appearing after a checkout attempt ([screenshot](https://ps.w.org/wc-no-shipping-message/assets/screenshot-5.png))
@@ -26,13 +27,17 @@ Customers see a no-shipping-options message when there are no delivery options c
 &nbsp;
 Message examples:
 
-- "You order exceeds 10 kg. Please [contact us](#) to get a quote."
+- "Your order exceeds 10 kg. Please [contact us](#) to get a quote."
 - "Shipping to the selected country for orders under $100 is not available. Please add more items to your order or [contact us](#)."
 - "[Product] is not available for shipping to the selected destination."
 - "Unfortunately, we can't deliver your order. Please [contact us](#) for details."
 
 
 == Changelog ==
+
+= 2.2.0 =
+* Rename the plugin according to the requirement from the WooCommerce team.
+* Tested with WordPress 6.8, WooCommerce 10.0.
 
 = 2.1.15 =
 * Tested with WooCommerce 9.8.
@@ -158,7 +163,7 @@ Message examples:
 * Update supported WordPress and WooCommerce versions.
 
 = 1.3.2.1 =
-* Update supported WordPress version to 5.1.
+* Update the supported WordPress version to 5.1.
 
 = 1.3.2 =
 * Update supported WooCommerce and WordPress versions.
@@ -167,10 +172,10 @@ Message examples:
 * Update supported WooCommerce version.
 
 = 1.3.0 =
-* Add an option to choose message type: Plain text or HTML.
+* Add an option to choose a message type: Plain text or HTML.
 
 = 1.2.0 =
-* Fix 'Edit message' link to point to the correct settings page on Woocommerce 2.6+.
+* Fix the 'Edit message' link to point to the correct settings page on Woocommerce 2.6+.
 
 = 1.1.0 =
 * Added 'Edit Message' link under the plugin name on the plugin listing.

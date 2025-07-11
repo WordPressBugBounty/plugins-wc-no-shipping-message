@@ -1,5 +1,6 @@
 <?php
 namespace Wnsm;
+if (!defined('ABSPATH')) exit;
 
 
 class Migrate
@@ -48,11 +49,13 @@ class Migrate
     private static function checkNotEmptyString($value, $param)
     {
         if (!is_string($value)) {
+            // phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped
             throw new \InvalidArgumentException("'$param' must be a string");
         }
 
         $value = trim($value);
         if ($value === '') {
+            // phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped
             throw new \InvalidArgumentException("'$param' must be a non-empty string");
         }
 

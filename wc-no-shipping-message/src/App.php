@@ -1,5 +1,6 @@
 <?php
 namespace Wnsm;
+if (!defined('ABSPATH')) exit;
 
 use RuntimeException;
 

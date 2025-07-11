@@ -1,5 +1,6 @@
 <?php
 namespace Wnsm;
+if (!defined('ABSPATH')) exit;
 
 
 use Automattic\WooCommerce\Utilities\FeaturesUtil;
@@ -48,7 +49,10 @@ class Hooks
             return;
         }
 
-        $builtinError = __('No shipping method has been selected. Please double check your address, or contact us if you need any help.', 'woocommerce');
+        // Look for an existings translation for the predefined WooCommerce message.
+        // Avoid using the double-underscore function here to prevent it being spotted or re-translated by automatic tools.
+        // phpcs:ignore WordPress.WP.I18n.TextDomainMismatch,WordPress.WP.I18n.LowLevelTranslationFunction
+        $builtinError = translate('No shipping method has been selected. Please double check your address, or contact us if you need any help.', 'woocommerce');
         $idx = array_search($builtinError, $shippingErrors, true);
         if ($idx === false) {
             return;
@@ -71,15 +75,19 @@ class Hooks
 
     public function adminEnqueueScripts($hookSuffix)
     {
+        // phpcs:disable WordPress.Security.NonceVerification.Recommended
         if (!($hookSuffix === 'woocommerce_page_wc-settings' &&
             isset($_GET['tab'], $_GET['section']) &&
             $_GET['tab'] === 'shipping' &&
             $_GET['section'] === 'options')) {
             return;
         }
+        // phpcs:enable
 
+        // phpcs:disable WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion,WordPress.WP.EnqueuedResourceParameters.MissingVersion
         wp_enqueue_script('wnsm_admin_js', $this->app->getAssetUrl('admin.js'), [], false, true);
         wp_enqueue_style('wnsm_admin_css', $this->app->getAssetUrl('admin.css'));
+        // phpcs:enable
     }
 
     public static function declareHposCompat(string $pluginFile) {
