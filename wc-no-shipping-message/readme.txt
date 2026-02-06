@@ -6,8 +6,8 @@ Requires PHP: 7.1
 Requires at least: 4.7
 Tested up to: 6.8
 WC requires at least: 5.0
-WC tested up to: 10.1
-Stable tag: 2.2.1
+WC tested up to: 10.2
+Stable tag: 2.2.2
 
 Allows you to customize the messages WooCommerce displays on the cart and checkout pages when no shipping methods are available.
 
@@ -34,6 +34,9 @@ Message examples:
 
 
 == Changelog ==
+
+= 2.2.2 =
+* Tested with WooCommerce 10.2.
 
 = 2.2.1 =
 * Tested with WooCommerce 10.1.
