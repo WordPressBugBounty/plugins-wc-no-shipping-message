@@ -4,10 +4,10 @@ Tags: woocommerce no shipping options, woocommerce no shipping, woocommerce, shi
 License: GPLv3
 Requires PHP: 7.1
 Requires at least: 4.7
-Tested up to: 6.8
+Tested up to: 6.9
 WC requires at least: 5.0
-WC tested up to: 10.5
-Stable tag: 2.2.3
+WC tested up to: 10.6
+Stable tag: 2.2.4
 
 Allows you to customize the messages WooCommerce displays on the cart and checkout pages when no shipping methods are available.
 
@@ -34,6 +34,9 @@ Message examples:
 
 
 == Changelog ==
+
+= 2.2.4 =
+* Tested with WooCommerce 10.6.
 
 = 2.2.3 =
 * Tested with WooCommerce 10.5.
