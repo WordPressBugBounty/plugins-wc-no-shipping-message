@@ -5,12 +5,12 @@
  * License: GPLv3
  * Author: dangoodman
  * Author URI: https://weightbasedhipping.com
- * Version: 2.2.6
+ * Version: 2.2.7
  * Requires PHP: 7.1
  * Requires at least: 4.7
- * Tested up to: 7.0
+ * Tested up to: 7.1
  * WC requires at least: 5.0
- * WC tested up to: 10.8
+ * WC tested up to: 11.0
  * Requires Plugins: woocommerce
  */
 if (!defined('ABSPATH')) exit;
